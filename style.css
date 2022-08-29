@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: grey;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+.headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.headerTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+
+.basket {
+    position: absolute;
+    z-index: 3;
+    right: 19px;
+    top: 57px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.basketTotal {
+    font-weight: bold;
+    text-align: right;
+}
+
+.productWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background-color: rgb(204, 204, 204);
+}
+
+.product {
+    background-color: rgb(182, 180, 180);
+    padding: 20px;
+    margin: 30px auto;
+    position: relative;
+    color: white;
+}
+
+.product>h3 {
+    margin-top: 0px;
+}
+
+.productImg {
+    width: 190px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.buyButton,
+.price {
+    color: green;
+}
+
+.price::after {
+    content: " ₽";
+}
+
+.footer {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footerContent {
+    display: grid;
+}
